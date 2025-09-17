@@ -89,7 +89,6 @@ body {
     border-radius: 2px;
 }
 
-/* Hero Section */
 .hero {
     background: linear-gradient(135deg, #ab3434 0%, #986c6c 100%);
     color: white;
@@ -201,7 +200,6 @@ body {
     justify-content: center;
 }
 
-/* Statistics Section */
 .stats {
     padding: 80px 0;
     background: white;
@@ -244,7 +242,6 @@ body {
     opacity: 0.9;
 }
 
-/* Section Headers */
 .section-header {
     text-align: center;
     margin-bottom: 4rem;
@@ -253,18 +250,17 @@ body {
 .section-header h2 {
     font-size: 2.5rem;
     font-weight: 700;
-    color: #2d3748;
+    color: #ffffff;
     margin-bottom: 1rem;
 }
 
 .section-header p {
     font-size: 1.2rem;
-    color: #718096;
+    color: #ffffff;
     max-width: 600px;
     margin: 0 auto;
 }
 
-/* Report Section */
 .report-section {
     padding: 80px 0;
     background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
