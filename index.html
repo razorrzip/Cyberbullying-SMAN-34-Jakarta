@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stop Cyberbullying - SMA Negeri 34 Jakarta</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <img src="sman34-trp.png"></i>
+                    <span>Stop Cyberbullying</span>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#report" class="nav-link">Laporkan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#aspirations" class="nav-link">Aspirasi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#prevention" class="nav-link">Pencegahan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">Tentang</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Bersama Melawan Cyberbullying</h1>
+                <p>Platform khusus siswa SMA Negeri 34 Jakarta untuk melaporkan kasus cyberbullying, menyampaikan aspirasi, dan belajar cara mencegah cyberbullying.</p>
+                <div class="hero-buttons">
+                    <a href="#report" class="btn btn-primary">Laporkan Sekarang</a>
+                    <a href="#prevention" class="btn btn-secondary">Pelajari Pencegahan</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <i class="fas fa-users-slash"></i>
+            </div>
+        </div>
+        <div class="school-info">
+            <p><i class="fas fa-school"></i> SMA Negeri 34 Jakarta - Bersama Menciptakan Lingkungan Digital yang Aman</p>
+        </div>
+    </section>
+
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <i class="fas fa-exclamation-triangle"></i>
+                    <h3>0</h3>
+                    <p>Laporan Diterima</p>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-heart"></i>
+                    <h3>0</h3>
+                    <p>Kasus Terselesaikan</p>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-lightbulb"></i>
+                    <h3>0</h3>
+                    <p>Aspirasi Terkumpul</p>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-users"></i>
+                    <h3>100%</h3>
+                    <p>Kerahasiaan Terjamin</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Report Section -->
+    <section id="report" class="report-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Laporkan Kasus Cyberbullying</h2>
+                <p>Laporkan secara anonim dan aman. Identitas Anda akan dijaga kerahasiaannya.</p>
+            </div>
+            <div class="report-content">
+                <div class="report-info">
+                    <div class="info-card">
+                        <i class="fas fa-user-secret"></i>
+                        <h3>100% Anonim</h3>
+                        <p>Identitas Anda tidak akan diungkapkan kepada siapapun</p>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-clock"></i>
+                        <h3>Respon Cepat</h3>
+                        <p>Tim kami akan merespon dalam 24 jam</p>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-shield-alt"></i>
+                        <h3>Data Aman</h3>
+                        <p>Semua data dienkripsi dan tersimpan aman</p>
+                    </div>
+                </div>
+                <form class="report-form" id="reportForm">
+                    <div class="form-group">
+                        <label for="reportType">Jenis Laporan</label>
+                        <select id="reportType" name="reportType" required>
+                            <option value="">Pilih jenis laporan</option>
+                            <option value="cyberbullying">Cyberbullying</option>
+                            <option value="harassment">Pelecehan Online</option>
+                            <option value="hate-speech">Ujaran Kebencian</option>
+                            <option value="doxxing">Penyebaran Data Pribadi</option>
+                            <option value="other">Lainnya</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="platform">Platform/Media</label>
+                        <select id="platform" name="platform" required>
+                            <option value="">Pilih platform</option>
+                            <option value="whatsapp">WhatsApp</option>
+                            <option value="instagram">Instagram</option>
+                            <option value="tiktok">TikTok</option>
+                            <option value="facebook">Facebook</option>
+                            <option value="twitter">Twitter/X</option>
+                            <option value="telegram">Telegram</option>
+                            <option value="other">Lainnya</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="description">Deskripsi Kejadian</label>
+                        <textarea id="description" name="description" rows="5" placeholder="Ceritakan kejadian yang Anda alami atau saksikan..." required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="evidence">Bukti (Opsional)</label>
+                        <input type="file" id="evidence" name="evidence" accept="image/*,.pdf,.doc,.docx" multiple>
+                        <small>Format yang didukung: Gambar, PDF, Word. Maksimal 5MB per file.</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="urgency">Tingkat Urgensi</label>
+                        <select id="urgency" name="urgency" required>
+                            <option value="">Pilih tingkat urgensi</option>
+                            <option value="low">Rendah - Tidak mendesak</option>
+                            <option value="medium">Sedang - Perlu perhatian</option>
+                            <option value="high">Tinggi - Sangat mendesak</option>
+                            <option value="critical">Kritis - Butuh tindakan segera</option>
+                        </select>
+                    </div>
+                    <div class="form-group checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="anonymous" name="anonymous" checked>
+                            <span class="checkmark"></span>
+                            Kirim laporan secara anonim
+                        </label>
+                    </div>
+                    <div class="form-group checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="terms" name="terms" required>
+                            <span class="checkmark"></span>
+                            Saya memahami bahwa informasi yang saya berikan adalah benar dan akan digunakan untuk tujuan penyelesaian kasus
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">
+                        <i class="fas fa-paper-plane"></i>
+                        Kirim Laporan
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section id="aspirations" class="aspirations-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Sampaikan Aspirasi Anda</h2>
+                <p>Berikan saran dan masukan untuk menciptakan lingkungan sekolah yang lebih baik</p>
+            </div>
+            <div class="aspirations-content">
+                <div class="aspirations-info">
+                    <h3>Mengapa Aspirasi Anda Penting?</h3>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Membantu sekolah memahami kebutuhan siswa</li>
+                        <li><i class="fas fa-check"></i> Menciptakan kebijakan yang lebih efektif</li>
+                        <li><i class="fas fa-check"></i> Membangun komunikasi yang lebih baik</li>
+                        <li><i class="fas fa-check"></i> Mencegah masalah sebelum terjadi</li>
+                    </ul>
+                </div>
+                <form class="aspirations-form" id="aspirationsForm">
+                    <div class="form-group">
+                        <label for="aspirationType">Kategori Aspirasi</label>
+                        <select id="aspirationType" name="aspirationType" required>
+                            <option value="">Pilih kategori</option>
+                            <option value="cyberbullying-prevention">Pencegahan Cyberbullying</option>
+                            <option value="digital-literacy">Literasi Digital</option>
+                            <option value="mental-health">Kesehatan Mental</option>
+                            <option value="school-policy">Kebijakan Sekolah</option>
+                            <option value="peer-support">Dukungan Teman Sebaya</option>
+                            <option value="other">Lainnya</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="aspirationTitle">Judul Aspirasi</label>
+                        <input type="text" id="aspirationTitle" name="aspirationTitle" placeholder="Berikan judul singkat untuk aspirasi Anda" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="aspirationContent">Isi Aspirasi</label>
+                        <textarea id="aspirationContent" name="aspirationContent" rows="5" placeholder="Jelaskan aspirasi, saran, atau ide Anda untuk mencegah cyberbullying dan menciptakan lingkungan yang lebih baik..." required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="priority">Prioritas</label>
+                        <select id="priority" name="priority" required>
+                            <option value="">Pilih prioritas</option>
+                            <option value="low">Rendah</option>
+                            <option value="medium">Sedang</option>
+                            <option value="high">Tinggi</option>
+                        </select>
+                    </div>
+                    <div class="form-group checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="aspirationAnonymous" name="aspirationAnonymous" checked>
+                            <span class="checkmark"></span>
+                            Kirim aspirasi secara anonim
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">
+                        <i class="fas fa-lightbulb"></i>
+                        Kirim Aspirasi
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section id="prevention" class="prevention-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Tips Pencegahan Cyberbullying</h2>
+                <p>Pelajari cara melindungi diri dan membantu orang lain dari cyberbullying</p>
+            </div>
+            <div class="prevention-tabs">
+                <div class="tab-buttons">
+                    <button class="tab-btn active" data-tab="protect">Melindungi Diri</button>
+                    <button class="tab-btn" data-tab="help">Membantu Orang Lain</button>
+                    <button class="tab-btn" data-tab="report">Cara Melaporkan</button>
+                    <button class="tab-btn" data-tab="recover">Pemulihan</button>
+                </div>
+                <div class="tab-content">
+                    <div class="tab-pane active" id="protect">
+                        <div class="tips-grid">
+                            <div class="tip-card">
+                                <i class="fas fa-user-lock"></i>
+                                <h3>Jaga Privasi</h3>
+                                <p>Atur pengaturan privasi akun media sosial Anda. Jangan bagikan informasi pribadi secara sembarangan.</p>
+                            </div>
+                            <div class="tip-card">
+                                <i class="fas fa-eye-slash"></i>
+                                <h3>Blokir & Laporkan</h3>
+                                <p>Jangan ragu untuk memblokir dan melaporkan akun yang melakukan cyberbullying kepada Anda.</p>
+                            </div>
+                            <div class="tip-card">
+                                <i class="fas fa-camera"></i>
+                                <h3>Simpan Bukti</h3>
+                                <p>Screenshot atau simpan bukti cyberbullying untuk keperluan pelaporan.</p>
+                            </div>
+                            <div class="tip-card">
+                                <i class="fas fa-comments"></i>
+                                <h3>Ceritakan ke Orang Terpercaya</h3>
+                                <p>Jangan simpan sendiri. Ceritakan kepada orang tua, guru, atau teman yang dipercaya.</p>
+                            </div>
+                            <div class="tip-card">
+                                <i class="fas fa-heart"></i>
+                                <h3>Jaga Kesehatan Mental</h3>
+                                <p>Ingat bahwa cyberbullying bukan salah Anda. Jaga kesehatan mental dan cari bantuan jika diperlukan.</p>
+                            </div>
+                            <div class="tip-card">
+                                <i class="fas fa-shield-alt"></i>
+                                <h3>Gunakan Fitur Keamanan</h3>
+                                <p>Manfaatkan fitur keamanan yang tersedia di platform media sosial.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="help">
+                        <div class="tips-grid">
+                            <div class="tip-card">
+                                <i class="fas fa-hand-holding-heart"></i>
+                                <h3>Berikan Dukungan</h3>
+                                <p>Tunjukkan empati dan berikan dukungan moral kepada korban cyberbullying.</p>
+                            </div>
+                            <div class="tip-card">
+                                <i class="fas fa-stop-circle"></i>
+                                <h3>Jangan Ikut Menyebarkan</h3>
+                                <p>Jangan ikut menyebarkan atau memperkuat konten yang menyakiti orang lain.</p>
+                            </div>
+                            <div class="tip-card">
+                                <i class="fas fa-exclamation-triangle"></i>
+                                <h3>Laporkan Kejadian</h3>
+                                <p>Laporkan kasus cyberbullying yang Anda saksikan kepada pihak yang berwenang.</p>
+                            </div>
+                            <div class="tip-card">
+                                <i class="fas fa-users"></i>
+                                <h3>Ajak Teman Peduli</h3>
+                                <p>Ajak teman-teman untuk peduli dan tidak mentolerir cyberbullying.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="report">
+                        <div class="report-steps">
+                            <div class="step">
+                                <div class="step-number">1</div>
+                                <div class="step-content">
+                                    <h3>Kumpulkan Bukti</h3>
+                                    <p>Screenshot atau simpan bukti cyberbullying dengan lengkap</p>
+                                </div>
+                            </div>
+                            <div class="step">
+                                <div class="step-number">2</div>
+                                <div class="step-content">
+                                    <h3>Gunakan Platform Ini</h3>
+                                    <p>Laporkan melalui form pelaporan di website ini</p>
+                                </div>
+                            </div>
+                            <div class="step">
+                                <div class="step-number">3</div>
+                                <div class="step-content">
+                                    <h3>Hubungi Guru BK</h3>
+                                    <p>Laporkan juga kepada guru Bimbingan Konseling sekolah</p>
+                                </div>
+                            </div>
+                            <div class="step">
+                                <div class="step-number">4</div>
+                                <div class="step-content">
+                                    <h3>Laporkan ke Platform</h3>
+                                    <p>Laporkan juga ke platform media sosial terkait</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="recover">
+                        <div class="recovery-content">
+                            <div class="recovery-section">
+                                <h3><i class="fas fa-heart"></i> Pemulihan Emosional</h3>
+                                <ul>
+                                    <li>Ingat bahwa ini bukan salah Anda</li>
+                                    <li>Bicarakan perasaan Anda dengan orang terpercaya</li>
+                                    <li>Lakukan aktivitas yang Anda sukai</li>
+                                    <li>Jangan isolasi diri dari teman dan keluarga</li>
+                                </ul>
+                            </div>
+                            <div class="recovery-section">
+                                <h3><i class="fas fa-phone"></i> Kontak Bantuan</h3>
+                                <div class="contact-list">
+                                    <div class="contact-item">
+                                        <strong>Guru BK SMA Negeri 34 Jakarta</strong>
+                                        <p>Hubungi langsung atau melalui WhatsApp sekolah</p>
+                                    </div>
+                                    <div class="contact-item">
+                                        <strong>Hotline Sejiwa</strong>
+                                        <p>119 ext 8 (24 jam)</p>
+                                    </div>
+                                    <div class="contact-item">
+                                        <strong>KPAI</strong>
+                                        <p>021-319-015-56</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Tentang Platform Ini</h2>
+                <p>Platform khusus untuk siswa SMA Negeri 34 Jakarta</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Misi Kami</h3>
+                    <p>Menciptakan lingkungan digital yang aman dan nyaman untuk seluruh siswa SMA Negeri 34 Jakarta. Kami berkomitmen untuk memberantas cyberbullying dan membangun budaya saling menghormati di dunia maya.</p>
+                    
+                    <h3>Komitmen Kami</h3>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Kerahasiaan identitas pelapor 100% terjamin</li>
+                        <li><i class="fas fa-check"></i> Respon cepat dalam 24 jam</li>
+                        <li><i class="fas fa-check"></i> Penanganan profesional oleh tim yang terlatih</li>
+                        <li><i class="fas fa-check"></i> Edukasi berkelanjutan tentang pencegahan cyberbullying</li>
+                    </ul>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-box">
+                        <i class="fas fa-graduation-cap"></i>
+                        <h3>SMA Negeri 34 Jakarta</h3>
+                        <p>Sekolah yang peduli dengan kesejahteraan digital siswa</p>
+                    </div>
+                    <div class="stat-box">
+                        <i class="fas fa-clock"></i>
+                        <h3>24/7</h3>
+                        <p>Platform tersedia kapan saja untuk Anda</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><i class="fas fa-shield-alt"></i> Stop Cyberbullying</h3>
+                    <p>Platform khusus siswa SMA Negeri 34 Jakarta untuk melawan cyberbullying dan menciptakan lingkungan digital yang aman.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Kontak Darurat</h4>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> Hotline Sejiwa: 119 ext 8</li>
+                        <li><i class="fas fa-phone"></i> KPAI: 021-319-015-56</li>
+                        <li><i class="fas fa-envelope"></i> bk@sman34jakarta.sch.id</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Jam Operasional</h4>
+                    <ul>
+                        <li><i class="fas fa-clock"></i> Platform: 24/7</li>
+                        <li><i class="fas fa-clock"></i> Respon Tim: 07:00 - 21:00</li>
+                        <li><i class="fas fa-clock"></i> Darurat: Segera</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 SMA Negeri 34 Jakarta. Dibuat dengan ❤️ untuk siswa yang lebih aman di dunia digital.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Success Modal -->
+    <div id="successModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-body">
+                <i class="fas fa-check-circle"></i>
+                <h3>Berhasil Dikirim!</h3>
+                <p id="modalMessage">Laporan Anda telah berhasil dikirim. Tim kami akan segera menindaklanjuti.</p>
+                <button class="btn btn-primary" onclick="closeModal()">Tutup</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
