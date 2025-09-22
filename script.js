@@ -260,6 +260,20 @@ class CyberbullyingPlatform {
         const sections = document.querySelectorAll('section[id]');
         const navLinks = document.querySelectorAll('.nav-link');
 
+        // Determine if navbar uses in-page hash links (single-page) or file links (multi-page)
+        const hasHashLinks = Array.from(navLinks).some(link => link.getAttribute('href')?.startsWith('#'));
+
+        if (!hasHashLinks) {
+            // Multi-page: mark current page link as active based on pathname
+            const currentPath = (location.pathname.split('/').pop() || 'index.html').toLowerCase();
+            navLinks.forEach(link => {
+                const href = (link.getAttribute('href') || '').toLowerCase();
+                link.classList.toggle('active', href === currentPath);
+            });
+            return; // Skip scroll-based section highlighting on multi-page
+        }
+
+        // Single-page: highlight based on visible section
         const highlightNavLink = () => {
             let current = '';
             sections.forEach(section => {
